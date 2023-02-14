@@ -8,8 +8,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import fr.kyo.crkf_android.databinding.ActivityMainBinding
-import okhttp3.*
-import java.io.IOException
+import retrofit2.Call
+
+import retrofit2.http.GET
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,7 +34,20 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
     }
+}
+
+/* Kotlin data/model classes that map the JSON response, we could also add Moshi
+ * annotations to help the compiler with the mappings on a production app */
+data class UserResponse(val results: List<User>)
+data class User(val email: String, val phone: String)
 
 
+/* Retrofit service that maps the different endpoints on the API, you'd create one
+ * method per endpoint, and use the @Path, @Query and other annotations to customize
+ * these at runtime */
+interface UserService {
+    @GET("/api")
+    fun getUsers(): Call<UserResponse>
 }
