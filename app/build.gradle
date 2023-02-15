@@ -45,7 +45,6 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
-
     // Not Used
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 

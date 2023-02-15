@@ -5,5 +5,5 @@ x
 Happ/src/main/java/fr/kyo/crkf_android/ui/dashboard/DashboardViewModel.kt,4\7\4790e5aec70dc302ed68e0f095a8448451f5a01c
 m
 =app/src/main/java/fr/kyo/crkf_android/ui/home/HomeFragment.kt,d\a\da6c6611b321adb100d4737c2e34eefb8809d507
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
